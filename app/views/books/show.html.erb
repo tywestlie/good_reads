@@ -3,6 +3,7 @@
 <ul>
   <% @reviews.each do |review| %>
   <li>
+    <%= review.user.name %>
     <%= review.content %>
     <%= review.rating %>
   </li>

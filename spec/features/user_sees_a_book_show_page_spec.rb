@@ -18,5 +18,6 @@ describe 'user visits the book show page' do
 
     expect(page).to have_content(review.content)
     expect(page).to have_content(review.rating)
+    expect(page).to have_content(review.user.name)
   end
 end
