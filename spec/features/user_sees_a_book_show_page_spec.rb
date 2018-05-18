@@ -12,7 +12,7 @@ describe 'user visits the book show page' do
   it 'sees reviews for a book' do
     book = Book.create!(title: 'To Kill A Mockingbird')
     user = User.create!(name: 'Jimmy')
-    review = user.reviews.create!(content: 'This book is great!', rating: 5, book: book.id)
+    review = user.reviews.create!(content: 'This book is great!', rating: 5, book_id: book.id)
 
     visit book_path(book)
 
